@@ -1,5 +1,5 @@
 import React,{useContext} from 'react'
-import { useNavigate,Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import classes from "./Navbar.module.css"
 import CartContext from '../../store/cart-context'
@@ -7,7 +7,6 @@ import CartContext from '../../store/cart-context'
 function Navbar() {
 
   const ctx = useContext(CartContext);
-  const navigate = useNavigate();
 
   return (
     <div className = {classes.nav}>

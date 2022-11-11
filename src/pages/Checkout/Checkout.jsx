@@ -8,6 +8,10 @@ function Checkout() {
 
   const ctx = useContext(CartContext);
 
+  const placeOrder = () => {
+    ctx.clearCart();
+  }
+
   return (
     <div className = {classes.checkout}>
       <div className = {classes.cart}>
@@ -25,7 +29,7 @@ function Checkout() {
         <div className = {classes.line}></div>
 
         <div>
-          <button>Place Order</button>
+          <button onClick = {placeOrder}>Place Order</button>
         </div>
       </div>
     </div>
