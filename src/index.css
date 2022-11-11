@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* :root {
+  --pink: #d90368;
+  --dark-pink: #820263;
+  --yellow-grey: #eadeda;
+  --black-blue: #2e294e;
+  --yellow: #ffd400;
+} */
+
+:root {
+  --pink: #FFCACA;
+  --light-pink: #FFECEF;
+  --black: #251B37;
+  --light-black: #372948;
+}
+
+body {
+  font-family: "Ubuntu",Arial, Helvetica, sans-serif;
+  background-color: var(--light-pink);
+}

@@ -1,0 +1,34 @@
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--pink);
+    font-family: "Ubuntu",Arial, Helvetica, sans-serif;
+    color: var(--black);
+    font-family: 1.2rem;
+    border-bottom: 5px solid var(--black);
+    margin-bottom: 1.2rem;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.cart {
+    background-color: var(--black);
+    font-size: 1.3rem;
+    color: var(--light-pink);
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.4rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.cart:hover {
+    transform: scale(1.1);
+}
