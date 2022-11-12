@@ -1,16 +1,26 @@
 .checkout {
-    padding: 1rem;
     width: 100vw;
-    display: flex;
     justify-content: center;
-    /* text-align: center; */
-    /* flex-wrap: wrap; */
-    overflow-x: scroll;
     gap: 1rem;
-    overflow-y: scroll;
+    overflow: hidden;
+    display: flex;
 }
 
 .checkout::-webkit-scrollbar {
+    display: none;
+}
+
+.parent {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    overflow-x: scroll;
+    padding: 1.3rem;
+    /* width: max-content; */
+}
+
+.parent::-webkit-scrollbar {
     display: none;
 }
 
@@ -74,7 +84,7 @@
 .preview {
     /* border: 3px solid black; */
     display: inline-block;
-    min-width: 260px;
+    min-width: 300px;
     width: 400px;
     height: 200px;
     /* box-shadow: 0 0 8px rgba(0,0,0,0.8); */
@@ -121,4 +131,14 @@
     height: 3px;
     background-color: var(--light-black);
     margin: 7px 0;
+}
+
+@media (max-width: 720px){
+    .parent{
+        /* display: flex; */
+        justify-content: flex-start;
+        padding: 5px;
+    }
+
+
 }
