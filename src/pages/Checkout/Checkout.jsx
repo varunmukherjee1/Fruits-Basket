@@ -23,7 +23,6 @@ function Checkout() {
 
   return (
     <div className = {classes.checkout}>
-      <div className = {classes.parent}>
         {overlay && 
           <>
             <div className = {classes.overlay}></div>
@@ -39,11 +38,6 @@ function Checkout() {
         </div>}
         {!(ctx.items.length === 0) && 
           <>
-            <div className = {classes.cart}>
-              {
-                ctx.items.map((item) => (<CartItem key = {item.id} obj = {item}/>))
-              }
-            </div>
             <div className = {classes.preview}>
               <h2>Summary</h2>
               <div className = {classes.line}></div>
@@ -57,9 +51,13 @@ function Checkout() {
                 <button onClick = {placeOrder}>Place Order</button>
               </div>
             </div>
+            <div className = {classes.cart}>
+              {
+                ctx.items.map((item) => (<CartItem key = {item.id} obj = {item}/>))
+              }
+            </div>
           </>
         }
-      </div>
     </div>
   )
 }
