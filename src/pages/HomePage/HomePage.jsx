@@ -13,7 +13,7 @@ function HomePage() {
       const res = await axios.get("https://fruit-basket-data-ca307-default-rtdb.firebaseio.com/fruits.json");
       // const res = await axios.get("https://www.fruityvice.com/api/fruit/all");
 
-      console.log(res.data);
+      // console.log(res.data);
       setFruits(res.data)
 
     } catch (error) {
@@ -31,7 +31,7 @@ function HomePage() {
       {(fruits.length === 0) && (<h1>Loading ...</h1>)}
       {fruits.map((frt) => {
         return (
-          <FoodItem obj = {frt}/>
+          <FoodItem key = {frt.id} obj = {frt}/>
         )
       })}
     </div>

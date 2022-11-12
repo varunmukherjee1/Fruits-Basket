@@ -14,10 +14,16 @@
   --yellow: #ffd400;
 } */
 
-:root {
+/* :root {
   --pink: #FFCACA;
   --light-pink: #FFECEF;
   --black: #251B37;
+  --light-black: #372948;
+} */
+:root {
+  --pink: #FF2E63;
+  --light-pink: #EAEAEA;
+  --black: #252A34;
   --light-black: #372948;
 }
 
