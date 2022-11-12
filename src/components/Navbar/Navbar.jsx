@@ -8,11 +8,11 @@ function Navbar() {
 
   const ctx = useContext(CartContext);
 
-  const changeNav = () => {
-    console.log(window.scrollY);
-  }
+  // const changeNav = () => {
+  //   console.log(window.scrollY);
+  // }
 
-  window.addEventListener("scroll",changeNav);
+  // window.addEventListener("scroll",changeNav);
 
   return (
     <div className = {`${classes.nav} ${classes.stick}`}>
