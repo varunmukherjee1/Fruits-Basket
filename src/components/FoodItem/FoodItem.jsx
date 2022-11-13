@@ -63,7 +63,7 @@ function FoodItem(props) {
       </div>
 
       <div className = {classes.buttons}>
-        <button onClick = {addToCart}>Add to Cart</button>
+        <button onClick = {addToCart}>Add to Basket</button>
         <button onClick = {buyNow}>Buy Now</button>
       </div>
     </div>

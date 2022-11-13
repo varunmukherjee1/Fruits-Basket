@@ -1,15 +1,16 @@
 import React,{useContext, useState} from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 import CartContext from '../../store/cart-context'
 import CartItem from "../../components/CartItem/CartItem"
 import classes from "./Checkout.module.css"
 
 function Checkout() {
-
   
   const ctx = useContext(CartContext);
   const [overlay,setOverlay] = useState(false);
+
+  const navigate = useNavigate();
 
   const placeOrder = () => {
     ctx.clearCart();
@@ -17,6 +18,7 @@ function Checkout() {
     setOverlay(true);
     setTimeout(() =>{
       setOverlay(false);
+      navigate("/")
     },1500);
 
   }
@@ -33,7 +35,7 @@ function Checkout() {
         }
         {(ctx.items.length === 0) && <div className = {classes.notif}>
           <p>Your cart in Empty !</p>
-          <p>Add some products from <Link to = "/">here</Link> 👈🏻</p>
+          <p>Add some products from <Link to = "/products">here</Link> 👈🏻</p>
           <div className = {classes.line}></div>
         </div>}
         {!(ctx.items.length === 0) && 

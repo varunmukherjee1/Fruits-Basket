@@ -1,17 +1,11 @@
 import {Routes,Route} from "react-router-dom"
 import Checkout from "./pages/Checkout/Checkout";
-import HomePage from "./pages/HomePage/HomePage";
+import Products from "./pages/Products/Products";
 import Navbar from "./components/Navbar/Navbar";
 import NotFound from "./pages/Not Found/NotFound";
+import HomePage from "./pages/HomePage/HomePage";
 
 function App() {
-
-  // const changeNav = () => {
-  //   console.log(window.scrollY);
-  // }
-
-  // window.addEventListener("scroll",changeNav);
-
 
   return (
     <div className="App">
@@ -21,6 +15,12 @@ function App() {
           path = "/"
           element = {
             <HomePage/>
+          }
+        />
+        <Route
+          path = "/products"
+          element = {
+            <Products/>
           }
         />
         <Route
